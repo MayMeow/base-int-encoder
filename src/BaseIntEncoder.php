@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 namespace Maymeow\BaseIntEncoder;
 
+/**
+ * based on something I found on forum long time ago.
+ */
 class BaseIntEncoder
 {
     protected string $codeSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
