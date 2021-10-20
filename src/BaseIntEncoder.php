@@ -50,12 +50,12 @@ class BaseIntEncoder
                             1
                         )
                     ),
-                    bcpow($base, (string)$exponent = $i-1)
+                    bcpow($base, "$i-1")
                 )
             );
         }
 
-        return bcmul((string)$c, '1', 0);
+        return bcmul($c, '1');
     }
 
     /**
@@ -64,6 +64,6 @@ class BaseIntEncoder
      */
     protected function bcFloor(int $x) : int
     {
-        return (int)bcmul((string)$x, '1', 0);
+        return (int)bcmul((string)$x, '1');
     }
 }
